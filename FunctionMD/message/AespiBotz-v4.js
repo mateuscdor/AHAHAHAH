@@ -224,13 +224,11 @@ const MenuList = `*╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗*\n*║║║
 ✏ ${prefix}kick
 ✏ ${prefix}promote
 ✏ ${prefix}demote
-✏ ${prefix}antilink <error>
 ✏ ${prefix}setnamegroup
-✏ ${prefix}welcome
+✏ ${prefix}grup <on/off>
 ✏ ${prefix}setdesc
 ✏ ${prefix}revoke
 ✏ ${prefix}afk
-✏ ${prefix}delete
 ✏ ${prefix}broadcast (Owner)
 
 ✘ *D O W N L O A D - M E N U*
@@ -2186,6 +2184,10 @@ if (q.includes('--help')) return reply(examquery)
             break
 case 'downloadmenu':{
   	m.reply(from, '✘ *D O W N L O A D - M E N U*\n\n✏ #play\n✏ #twitter\n✏ #tiktoknowm\n✏ #tiktokmp3\n✏ #youtubemp3\n✏ #youtubemp4\n✏ #mediafire', { quoted : m } )
+}
+break
+case 'groupmenu':{
+  	m.reply(from, '✘ *G R O U P - M E N U*\n\n✏ #add\n✏ #kick\n✏ #promote\n✏ #demote\n✏ #setnamegroup\n✏ #grup\n✏ #setdesc\n✏ #revoke\n✏ #afk\n✏ #broadcast', { quoted : m } )
 }
 break
 case 'convertmenu':{
