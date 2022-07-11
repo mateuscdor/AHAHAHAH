@@ -1851,7 +1851,7 @@ if (!isBotGroupAdmins) return reply('Bot Bukan Admins')
 if (!q) return reply(`Kirim perintah ${prefix + order} teks`)
 await sock.groupUpdateDescription(from, q)
 break
-case 'welcome': case 'grup':
+case 'grup':
 if (q.includes('--help')) return reply(`Example : ${prefix + order} on/off`) 
 if (!isGroup) return reply('Khusus Grup')
 if (!isGroupAdmins) return reply('Khusus Admin')
