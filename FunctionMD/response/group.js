@@ -24,7 +24,7 @@
          update.id, 
          { 
          caption: `*Halo @${num.split("@")[0]} Member Baru Di ${metadata.subject}* *Patuhi Rules Di Group Ini*`, 
-         image: { 
+         jpeg: { 
           jpegThumbnail: await getBuffer(ppuser) 
          }, 
          buttons: button, 
@@ -44,7 +44,7 @@
            update.id, 
           { 
            caption: `*@${num.split("@")[0]} Keluar Dari Group ${metadata.subject}*\nMungkin Dia Sedang Menculik Waifu Makanya Keluar Group`, 
-           image: { jpegThumbnail: await getBuffer(ppuser) 
+           jpeg: { jpegThumbnail: await getBuffer(ppuser) 
           }, 
            buttons: button, 
            footer: 'FikryFA', 
